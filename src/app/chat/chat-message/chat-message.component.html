@@ -1,0 +1,15 @@
+<div class="message-container" [ngClass]="{'is-own-message-container' : isOwnMessage}">
+  <div class="message-data" [ngClass]="{'is-own-message-data' : isOwnMessage}">
+    <span class="sender" [ngClass]="{'is-own-sender' : isOwnMessage}">
+      {{ chatMessage.username }}
+    </span>
+
+    <span class="timestamp" [ngClass]="{'is-own-timestamp' : isOwnMessage}">
+      {{ chatMessage.time }}
+    </span>
+  </div>
+
+  <div class='message-content' [ngClass]="{'is-own-message-content' : isOwnMessage}">
+    {{ chatMessage.message }}
+  </div>
+</div>

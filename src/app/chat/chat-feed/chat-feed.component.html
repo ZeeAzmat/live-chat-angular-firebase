@@ -1,0 +1,5 @@
+<div class='chat-feed'>
+  <div *ngFor="let message of chatFeed | async" class="chat-message">
+    <app-chat-message [chatMessage]="message"></app-chat-message>
+  </div>
+</div>
